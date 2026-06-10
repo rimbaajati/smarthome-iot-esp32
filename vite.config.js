@@ -23,9 +23,10 @@ export default defineConfig({
         },
     },
     server: {
-        host: "0.0.0.0", // Membuka akses Vite ke seluruh jaringan
+        host: "0.0.0.0",
+        cors: true,
         hmr: {
-            host: "192.168.0.113", // Beritahu Vite IP Wi-Fi aslimu
+            host: "172.16.7.53", // Sesuaikan dengan IP komputer Anda saat ini (sama seperti ESP32)
         },
     },
 });

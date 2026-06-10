@@ -17,6 +17,8 @@ return new class extends Migration
             $table->boolean('asap_terdeteksi')->default(false);
             $table->boolean('hujan_turun')->default(false);
             $table->boolean('jemuran_ditarik')->default(false);
+            $table->float('suhu')->nullable()->default(0);
+            $table->float('kelembapan')->nullable()->default(0);
             $table->timestamps();
         });
     }

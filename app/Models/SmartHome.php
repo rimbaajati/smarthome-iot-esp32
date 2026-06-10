@@ -2,9 +2,18 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class SmartHome extends Model
 {
-    protected $guarded = [];
+    use HasFactory;
+    protected $fillable = [
+        'pintu_terbuka',
+        'asap_terdeteksi',
+        'hujan_turun',
+        'jemuran_ditarik',
+        'suhu',       
+        'kelembapan'
+    ];
 }
